@@ -1,0 +1,11 @@
+version: '2'
+services:
+  rainloop:
+    image: 'nicokaiser/rainloop'
+    ports:
+      - 80:80
+    volumes:
+      - rainloop_data:/var/www/html/data
+volumes:
+  rainloop_data:
+    driver: local
